@@ -13,7 +13,7 @@ displayButton.addEventListener('click',()=>{
 
     //設問１-b:空入力チェック
     if (inputValue === ''){
-        alert('入力値が空です');
+        alert('入力値が空です。');
     }else{
         //設問１-a:テキストを表示
         displayArea.textContent = inputValue;
@@ -36,7 +36,7 @@ addButton.addEventListener('click',()=>{
     const inputValue = textInput.value;
 
     if(inputValue === ''){
-        alert('入力値が空です');
+        alert('入力値が空です。');
         return;
     }
     //設問４-a:新しい行と「削除」ボタンを作成してデータテーブルの最下部に追加
@@ -61,10 +61,10 @@ addButton.addEventListener('click',()=>{
 });
 
 //設問５-a:削除ボタンクリック処理
-tableBody.addEventListener('Click',(event)=>{
-    if(event.target.classList,contains('delete-btn')){
+tableBody.addEventListener('click',(event)=>{
+    if(event.target.classList.contains('delete-btn')){
         //該当業を削除
-        event.target,closest('tr').remove();
+        event.target.closest('tr').remove();
         //設問５-b & 4-b :行数と表示ボタンの制御を更新
         updateCount();
     }
@@ -73,7 +73,7 @@ tableBody.addEventListener('Click',(event)=>{
 //共通関数:行数更新＆制御（設問４-b,５-b）
 function updateCount(){
     const rowCount=tableBody.querySelectorAll('tr').length;
-    countSpan.textContent=roeCount;
+    countSpan.textContent=rowCount;
 
     //設問４-b & 設問５-b :３件以上なら表示ボタンを非表示、３件未満なら再表示
     if(rowCount>=3){
