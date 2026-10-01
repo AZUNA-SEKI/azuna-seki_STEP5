@@ -1,0 +1,42 @@
+/*==全般の基本設定==*/
+body {
+    font-family: sans-serif;
+}
+
+/*==設問２:背景色の変更==*/
+#btn-bg{
+    cursor: pointer;
+}
+
+/*==設問１,設問３:表示エリア==*/
+#display-area{
+    border:1px solid #ccc;
+    min-height: 24px;
+    background-color: #f9f9f9;
+}
+
+/*==設問３:ハイライト時の装飾==*/
+.highlight{
+    background-color: yellow;
+}
+
+/*==設問４:行数カウント表示==*/
+#count{
+    font-weight: bold;
+}
+
+/*==設問５~７:データテーブル（表）の装飾==*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    border:1px solid #aaa;
+    padding:8px;
+    text-align: left;
+}
+
+th{
+    background-color:#eee;
+}

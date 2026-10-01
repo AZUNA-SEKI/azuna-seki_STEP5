@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>STEP5 テスト</title>
+        <!--style.cssを読み込む-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--背景色を変更ボタンを配置-->
+        <button id="btn-bg">背景色を変更</button><br>
+        <!--テキスト入力欄、表示ボタン、追加ボタンを順に配置-->
+        <input type="text" id="text" name="text">
+        <button id="display">表示</button>
+        <button id="addition">追加</button>
+        <!--表示エリアを配置-->
+        <div id="display-area">表示エリア</div>
+        <!--行数カウント表示-->
+        <p>現在の行数:<span id="count">0</span>件</p>
+        <!--データテーブル-->
+        <table>
+            <thead>
+                <tr>
+                    <th>内容</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!--JavaScriptでここに行を追加していく-->
+            </tbody>
+        </table>
+        <!--style.jsを読み込む-->
+        <script src="style.js"></script>
+    </body>
+</html>
